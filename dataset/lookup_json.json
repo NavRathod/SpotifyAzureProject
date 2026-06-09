@@ -1,0 +1,40 @@
+{
+	"name": "lookup_json",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DataLakeGen2",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Conatiner": {
+				"type": "string"
+			},
+			"Folder": {
+				"type": "string"
+			},
+			"File": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().File",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().Folder",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().Conatiner",
+					"type": "Expression"
+				}
+			}
+		},
+		"schema": {}
+	}
+}
