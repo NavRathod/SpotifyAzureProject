@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADFAnilLearningPath"
+		},
+		"Azure_Sql_password": {
+			"value": ""
+		},
+		"DataLakeGen2_accountKey": {
+			"value": ""
+		},
+		"Azure_Sql_properties_typeProperties_server": {
+			"value": "anshserver.database.windows.net"
+		},
+		"Azure_Sql_properties_typeProperties_database": {
+			"value": "spotifyanshproject"
+		},
+		"Azure_Sql_properties_typeProperties_userName": {
+			"value": "anshspotifyproject"
+		},
+		"DataLakeGen2_properties_typeProperties_url": {
+			"value": "https://nanavathstorage.dfs.core.windows.net/"
+		}
+	}
+}
