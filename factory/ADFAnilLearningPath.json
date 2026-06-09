@@ -1,0 +1,15 @@
+{
+	"name": "ADFAnilLearningPath",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "spaincentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "37a8ceef-329c-4ae0-9d13-8be4fbd4ae80",
+		"tenantId": "5d2d9e33-bd77-46e1-b1e6-721c91c9373e"
+	}
+}
