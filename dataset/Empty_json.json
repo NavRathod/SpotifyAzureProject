@@ -1,18 +1,18 @@
 {
-	"name": "json_dynamic",
+	"name": "Empty_json",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "DataLakeGen2",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"Conatiner": {
+			"container": {
 				"type": "string"
 			},
-			"Folder": {
+			"folder": {
 				"type": "string"
 			},
-			"File": {
+			"file": {
 				"type": "string"
 			}
 		},
@@ -22,15 +22,15 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@dataset().File",
+					"value": "@dataset().file",
 					"type": "Expression"
 				},
 				"folderPath": {
-					"value": "@dataset().Folder",
+					"value": "@dataset().folder",
 					"type": "Expression"
 				},
 				"fileSystem": {
-					"value": "@dataset().Conatiner",
+					"value": "@dataset().container",
 					"type": "Expression"
 				}
 			}
